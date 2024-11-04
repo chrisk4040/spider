@@ -1,7 +1,7 @@
 
 
 html {
-    background: #ff785a;
+    background: purple;
 }
 
 
@@ -75,6 +75,7 @@ html:hover .spider {
     border: 5px solid transparent;
     border-top-color: #000;
     border-radius: 40px 40px 0 0;
+    animation: wiggle 1s infinite;
 }
 
 .spider .legs {
@@ -137,5 +138,20 @@ html:hover .spider {
     0%, 100% {
         transform: translateY(0);
     }
+}
 
+@keyframes wiggle {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+}
 
